@@ -19,6 +19,7 @@ const Comments = () => {
 
   const handleThemeChange = ({ detail: { themeValue } }) => {
     const theme = themeValue ?? "light";
+    alert(theme);
     setTheme(theme);
   };
 
