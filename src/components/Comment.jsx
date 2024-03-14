@@ -1,22 +1,23 @@
 // @ts-nocheck
-import * as React from 'react';
-import Giscus from '@giscus/react';
+import * as React from "react";
+import Giscus from "@giscus/react";
 
-const id = 'inject-comments';
+const id = "inject-comments";
 
 function getCurrentTheme() {
-  if (window.localStorage.getItem('theme')) {
-    return window.localStorage.getItem('theme');
+  if (window.localStorage.getItem("theme")) {
+    return window.localStorage.getItem("theme");
   }
-  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  return window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
 }
-
 
 const Comments = () => {
   const [mounted, setMounted] = React.useState(false);
   const [theme, setTheme] = React.useState("light");
 
-  const handleThemeChange = ({detail: { themeValue }}) => {
+  const handleThemeChange = ({ detail: { themeValue } }) => {
     const theme = themeValue ?? "light";
     setTheme(theme);
   };
@@ -25,10 +26,10 @@ const Comments = () => {
     const theme = getCurrentTheme();
     console.log(theme);
     setTheme(theme);
-    window.addEventListener('theme-change', handleThemeChange);
+    window.addEventListener("theme-change", handleThemeChange);
 
     return () => {
-      window.removeEventListener('theme-changes', handleThemeChange);
+      window.removeEventListener("theme-changes", handleThemeChange);
     };
   }, []);
 
@@ -37,7 +38,7 @@ const Comments = () => {
   }, []);
 
   return (
-    <div id={id}>
+    <div id={id} style={{ marginTop: "50px" }}>
       {mounted ? (
         <Giscus
           id={id}
