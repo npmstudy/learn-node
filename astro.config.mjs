@@ -23,7 +23,7 @@ export default defineConfig({
               link: "/chapter1/about/",
             },
             {
-              label: "应用场景",
+              label: "Node.js应用场景",
               link: "/chapter1/app/",
             },
             {
