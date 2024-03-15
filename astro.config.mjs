@@ -20,26 +20,38 @@ export default defineConfig({
             // Each item here is one entry in the navigation menu.
             {
               label: "什么是Node.js",
-              link: "/chapter1/example/",
+              link: "/chapter1/about/",
+            },
+            {
+              label: "应用场景",
+              link: "/chapter1/app/",
+            },
+            {
+              label: "Node.js v20运行原理和新特性",
+              link: "/chapter1/principle/",
+            },
+            {
+              label: "Node.js和大前端的关系",
+              link: "/chapter1/fe/",
             },
             {
               label: "安装",
+              link: "/chapter1/install/",
+            },
+            {
+              label: "第一个例子·",
               link: "/chapter1/example/",
             },
             {
-              label: "第一个例子",
+              label: "编辑器·",
               link: "/chapter1/example/",
             },
             {
-              label: "编辑器",
+              label: "调试·",
               link: "/chapter1/example/",
             },
             {
-              label: "调试",
-              link: "/chapter1/example/",
-            },
-            {
-              label: "测试",
+              label: "测试·",
               link: "/chapter1/example/",
             },
           ],
