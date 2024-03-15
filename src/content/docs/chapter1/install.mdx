@@ -1,12 +1,15 @@
-# Node.js安装
+---
+title: Node.js安装
+description: A guide in my new Starlight docs site.
+---
 
-这部分参考了《[狼书（卷1）：更了不起的Node.js](https://item.jd.com/49303605645.html)》里的3m安装法。
+这部分参考了《 [狼书（卷1）：更了不起的Node.js](https://item.jd.com/49303605645.html) 》里的3m安装法。
 
 ## nvm（node version management）
 
-首先介绍第一种 nvm，Github 地址 **https://github.com/nvm-sh/nvm**，文档写的也很详细，推荐去阅读，以下为安装步骤：
+首先介绍第一种 nvm，Github 地址 https://github.com/nvm-sh/nvm，文档写的也很详细，推荐去阅读，以下为安装步骤：
 
-- 安装 nvm：wget -qO- **https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh** | bash
+- 安装 nvm：wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
 - 查看所有 Node.js 版本：nvm ls-remote
 - 查看本地 Node.js 版本：nvm ls
 - 安装 Node.js：nvm install v6.9.5
@@ -33,12 +36,12 @@ Example:
 
 ## npm（node package management）
 
-npm（Node Package Manager）是Node.js的包管理工具，用于安装、发布和管理Node.js模块。它是Node.js的默认包管理工具，随同Node.js一起安装。
+`npm（Node Package Manager）` 是Node.js的包管理工具，用于安装、发布和管理Node.js模块。它是Node.js的默认包管理工具，随同Node.js一起安装。
 
 最新特性包括：
 
 1. npx：npx是npm 5.2.0版本引入的新命令，用于执行临时安装的模块。它可以直接运行本地安装的模块，而无需全局安装。例如，可以使用npx来运行项目依赖的模块，而无需在全局安装它们。
-2. npx create：npx create是一种快速创建项目的方式，它可以通过执行命令"npx create-<project-name>"来创建一个新的项目。例如，可以使用"npx create-react-app my-app"来创建一个新的React应用程序。
+2. npx create：npx create是一种快速创建项目的方式，它可以通过执行命令`npx create-<project-name>`来创建一个新的项目。例如，可以使用"npx create-react-app my-app"来创建一个新的React应用程序。
 
 与yarn和pnpm相比，npm是最流行的包管理工具之一，拥有大量的社区支持和生态系统。
 
